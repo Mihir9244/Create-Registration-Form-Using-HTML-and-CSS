@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            align-items: center;
+            margin: 10px;
+           
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            height: 700px;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: inline-flex;
+            margin-bottom: 5px;
+            margin-right: 10px;
+        }
+
+        .form-group input[type="text"], 
+        .form-group input[type="email"], 
+        .form-group input[type="password"], 
+        .form-group textarea, 
+        .form-group select {
+            width: 60%;
+            padding: 10px;
+            align-items: end;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            display: inline;
+        }
+        .form-group input[type="email"] {
+            margin-left: 30px;
+        }
+
+        .form-group input[type="radio"] {
+            margin-right: 10px;
+            justify-items: start;
+    
+        }
+
+        .form-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .form-group input[type="city"] {
+            padding-right: 10px;
+        }    
+
+        .form-group textarea {
+            height: 50px;
+        }
+
+        .form-buttons {
+            display: inline;
+            justify-content: space-between;   
+        }
+
+        .form-buttons button {
+            width: 40%;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+
+       
+        .form-buttons button.save {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .form-buttons button.reset {
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" placeholder="Enter First Name">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" placeholder="Enter Last Name">
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter Username">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Password">
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+            <div class="form-group">
+                <label>Hobby</label>
+                <input type="checkbox" name="hobby" value="reading"> Reading
+                <input type="checkbox" name="hobby" value="writing"> Writing
+                <input type="checkbox" name="hobby" value="singing"> Singing
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="Enter City">
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" placeholder="Enter Country">
+            </div>
+            <div class="form-group">
+                <label for="selectCar">Select Car</label>
+                <select id="selectCar">
+                    <option value="nano">Nano</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment</label>
+                <textarea id="comment" placeholder="Enter Comment">The cat was playing in the garden.</textarea>
+            </div>
+            <div class="form-buttons">
+                <button type="submit" class="save">Save</button>
+                <button type="reset" class="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
